@@ -32,7 +32,6 @@ class datamanager:
 		F.close
 		
 		try:
-			#os.system('sudo systemctl start mysqld')
 			self.engine.connect()
 		except:
 			print("OperationalError: Unable to connect to MySQL database.")
